@@ -130,8 +130,7 @@ public class Main extends JProcessing.Processing{
                             line[y+5]+=" "+Integer.toString(image.pixels[index].getAlpha()/128)+
                                     addZero(binary(round(brightness(image.pixels[index])/255f*(pow(2,bits)-1))));
                         else if (mode==3)
-                            line[y+5]+=" "+Integer.toString(image.pixels[index].getRed()/128)+
-                                    addZero(binary(round(image.pixels[index].getRed()/255f*(pow(2,bits)-1))))+
+                            line[y+5]+=" "+addZero(binary(round(image.pixels[index].getRed()/255f*(pow(2,bits)-1))))+
                                     addZero(binary(round(image.pixels[index].getGreen()/255f*(pow(2,bits)-1))))+
                                     addZero(binary(round(image.pixels[index].getBlue()/255f*(pow(2,bits)-1))));
                         else
